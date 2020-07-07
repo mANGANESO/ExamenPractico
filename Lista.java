@@ -92,25 +92,25 @@ class Lista
 				String elemento;
 				elemento = txtCampoEscribe.getText();
 				lista.addP(elemento);
-				vacio = vacio + elemento + " ";
+				vacio = vacio + elemento +'\n';
 				txaAreaInfo.setText(vacio);
 			}
 			else if (event.getSource() == btnObtener)
 			{
 				for(int a=0; a<lista.tamanio(); a++)
 				{
-					vacio = vacio + "Elemento No." + a + lista.obtener(a)+ " ";
+					vacio = vacio + "Elemento No." + a + lista.obtener(a)+ '\n';
 					txaAreaInfo.setText(vacio);
 				}
 			}
 			else if (event.getSource() == btnTamano)
 			{
-				vacio = vacio + "Tamano de la Lista: " + lista.tamanio() + " ";
+				vacio = vacio + "Tamano de la Lista: " + lista.tamanio() + '\n';
 				txaAreaInfo.setText(vacio);
 			}
 			else if (event.getSource() == btnVacio)
 			{
-				vacio = vacio + "Esta Vacia? " + lista.cabezaVacia() + " ";
+				vacio = vacio + "Esta Vacia? " + lista.cabezaVacia() + '\n';
 				txaAreaInfo.setText(vacio);
 			}
 			else if (event.getSource() == btnBorrar)
